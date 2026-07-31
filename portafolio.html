@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antony Escobedo Vega — Vídeos y Marketing para negocios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Alex+Brush&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#a020f0;
+    --bg:#0a0a0a;
+    --card:#151515;
+    --text:#f2f2f2;
+    --muted:#9a9a9a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Poppins',sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px 60px;}
+
+  /* HERO */
+  header.hero{
+    text-align:center;
+    padding:56px 20px 40px;
+  }
+  .hero h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:56px;
+    letter-spacing:2px;
+    line-height:1;
+    color:#fff;
+  }
+  .hero .script{
+    font-family:'Alex Brush',cursive;
+    font-size:48px;
+    color:var(--accent);
+    display:block;
+    margin-top:-6px;
+  }
+  .hero p.tagline{
+    margin-top:18px;
+    color:var(--muted);
+    font-size:16px;
+    max-width:420px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /* SECTIONS */
+  section{margin-top:48px;}
+  h2.section-title{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:30px;
+    letter-spacing:1px;
+    color:#fff;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin-bottom:20px;
+  }
+
+  /* PORTFOLIO GRID */
+  .portfolio-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    align-items:start;
+    justify-items:stretch;
+  }
+  @media(max-width:520px){
+    .portfolio-grid{grid-template-columns:1fr;}
+  }
+  .portfolio-item{
+    background:var(--card);
+    border-radius:16px;
+    border:1px solid #262626;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:14px;
+  }
+  .portfolio-item .embed-wrap{
+    width:100%;
+    max-width:260px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+    border-radius:14px;
+    overflow:hidden;
+    border:2px solid var(--accent);
+    box-shadow:0 0 0 4px rgba(160,32,240,0.15), 0 0 24px rgba(160,32,240,0.35);
+  }
+  .portfolio-item .embed-wrap blockquote.tiktok-embed{
+    width:100% !important;
+    min-width:0 !important;
+  }
+  .drive-frame{
+    width:100%;
+    aspect-ratio:9/16;
+    border:0;
+    display:block;
+  }
+  .portfolio-caption{
+    padding:12px 6px 4px;
+    text-align:center;
+    width:100%;
+  }
+  .portfolio-caption .client{
+    font-weight:600;
+    color:#fff;
+    font-size:14px;
+  }
+  .portfolio-caption .niche{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:2px;
+  }
+  blockquote.tiktok-embed{margin:0 auto !important;}
+
+  /* PRICING */
+  .pricing-grid{display:flex;flex-direction:column;gap:14px;}
+  .price-card{
+    background:var(--card);
+    border:1px solid #262626;
+    border-radius:14px;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .price-card.featured{border-color:var(--accent);}
+  .price-card .name{font-weight:600;font-size:16px;color:#fff;}
+  .price-card .desc{color:var(--muted);font-size:13px;margin-top:4px;max-width:280px;}
+  .price-card .amount{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:30px;
+    color:var(--accent);
+    white-space:nowrap;
+    margin-left:12px;
+  }
+
+  /* CTA */
+  .cta{
+    margin-top:52px;
+    text-align:center;
+    background:var(--card);
+    border:1px solid #262626;
+    border-radius:18px;
+    padding:36px 24px;
+  }
+  .cta h3{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:28px;
+    color:#fff;
+    margin-bottom:10px;
+  }
+  .cta p{color:var(--muted);font-size:14px;margin-bottom:20px;}
+  .btn-whatsapp{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--accent);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    padding:14px 28px;
+    border-radius:40px;
+    font-size:15px;
+  }
+
+  /* OPTIONAL MARKETING FOOTNOTE */
+  .optional{
+    margin-top:36px;
+    text-align:center;
+    font-size:13px;
+    color:var(--muted);
+    padding:0 10px;
+  }
+  .optional a{color:var(--accent);text-decoration:none;font-weight:600;}
+
+  footer{
+    margin-top:50px;
+    text-align:center;
+    color:#555;
+    font-size:12px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>VIDEOS QUE<span class="script">Venden</span></h1>
+    <p class="tagline">Grabo y edito vídeos profesionales para negocios locales — listos para publicar en 48h.</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Portafolio</h2>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@heydrens/video/7656545034392587542" data-video-id="7656545034392587542" style="max-width:100%;min-width:280px;">
+            <section></section>
+          </blockquote>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">Terelita Gastrobar</div>
+          <div class="niche">Restaurante peruano · Alcorcón</div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@heydrens/video/7663507961993579798" data-video-id="7663507961993579798" style="max-width:100%;min-width:280px;">
+            <section></section>
+          </blockquote>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">K5 International</div>
+          <div class="niche">Barbería / peluquería · Alcorcón</div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@heydrens/video/7629373425227730198" data-video-id="7629373425227730198" style="max-width:100%;min-width:280px;">
+            <section></section>
+          </blockquote>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">Restaurante en Majadahonda</div>
+          <div class="niche">Reconocido en Pesadilla en la Cocina</div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@terelitarestaurante/video/7666142685052390678" data-video-id="7666142685052390678" style="max-width:100%;min-width:280px;">
+            <section></section>
+          </blockquote>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">Terelita Gastrobar</div>
+          <div class="niche">Contenido de marca · gastronomía peruana</div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@terelitarestaurante/video/7639467246334512406" data-video-id="7639467246334512406" style="max-width:100%;min-width:280px;">
+            <section></section>
+          </blockquote>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">Terelita Gastrobar</div>
+          <div class="niche">Historia de marca</div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <iframe class="drive-frame" src="https://drive.google.com/file/d/1isXTkIsxHgeU8NDzrZk5dRUsQYfGWtGe/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">Kora Café</div>
+          <div class="niche">Cafetería</div>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="embed-wrap">
+          <iframe class="drive-frame" src="https://drive.google.com/file/d/1__Jc6zpw9NVUOszHZ6o8hbE3iIX3dIkY/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="portfolio-caption">
+          <div class="client">Restaurante El Cortijo D&amp;N</div>
+          <div class="niche">Restaurante · Vallecas</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Packs de vídeo</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:18px;">Para cualquier negocio: restaurantes, tiendas, barberías, cafeterías, servicios. Cada grabación (evento, producto, local, lo que necesites mostrar) se factura como una pieza independiente dentro del pack. Todos los packs incluyen portada de vídeo.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div>
+          <div class="name">IMPACTO</div>
+          <div class="desc">1 vídeo (máx. 1 min) grabado y editado + portada</div>
+        </div>
+        <div class="amount">90€</div>
+      </div>
+      <div class="price-card featured">
+        <div>
+          <div class="name">BOOST</div>
+          <div class="desc">2 vídeos al mes + portada de cada uno, 8-10 fotos editadas con tu logo</div>
+        </div>
+        <div class="amount">160€</div>
+      </div>
+      <div class="price-card">
+        <div>
+          <div class="name">ÉLITE</div>
+          <div class="desc">3er vídeo adicional el mismo mes + portada, mismas condiciones del pack BOOST</div>
+        </div>
+        <div class="amount">70€</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Marketing y publicidad</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:18px;">Para negocios que quieren ir más allá del vídeo puntual: gestión completa de presencia digital y campañas.</p>
+    <div class="price-card" style="flex-direction:column;align-items:flex-start;gap:10px;">
+      <div class="name">Gestión de marketing digital</div>
+      <div class="desc" style="max-width:100%;">
+        Campañas segmentadas en Google Ads, Meta Ads (Facebook/Instagram) y TikTok Ads · estrategia y calendario de contenido · optimización de perfiles (TikTok, Instagram, Google Mi Negocio, Facebook) · SEO y creación de webs.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Sistemas y automatizaciones</h2>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:18px;">Soluciones digitales a medida para agilizar tu negocio.</p>
+    <div class="price-card" style="flex-direction:column;align-items:flex-start;gap:10px;">
+      <div class="name">A medida</div>
+      <div class="desc" style="max-width:100%;">
+        Cartas / menús digitales con código QR · chatbots y automatizaciones para atención al cliente · sistemas personalizados según lo que necesite tu negocio.
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h3>¿Hablamos de tu negocio?</h3>
+    <p>Coordinamos fecha de grabación esta semana.</p>
+    <a class="btn-whatsapp" href="https://wa.me/34641564952?text=Hola%2C%20vi%20tu%20portafolio%20y%20quiero%20info%20sobre%20los%20v%C3%ADdeos" target="_blank">
+      Escríbeme por WhatsApp
+    </a>
+  </div>
+
+  <footer>Antony Escobedo Vega — Vídeo y Marketing para negocios</footer>
+</div>
+
+<script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
